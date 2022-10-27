@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 // Route::group(['prefix'=>'mahasiswa'], function(){
 //     Route::get('/pendaftaran', function () {
@@ -29,3 +29,7 @@ Route::get('/', function () {
 // 	});
 // });
 // Route::view('/mahasiswa', 'mahasiswa/index');
+
+Route::get('/mahasiswa', function() {
+    return View::make('mahasiswa.index');
+});
